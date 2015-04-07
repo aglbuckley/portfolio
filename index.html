@@ -9,17 +9,20 @@
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-
+    <link href="css/custom.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Lato|Lora|Open+Sans' rel='stylesheet' type='text/css'>
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <script src="js/custom.js"></script>
   </head>
   <body data-spy="scroll" data-target="#top-nav" style="padding-top: 70px;">
     <header>
-      <nav class="navbar navbar-default navbar-fixed-top" id="top-nav" role="banner">
+      <nav class="navbar navbar-default navbar-fixed-top transparent-top" id="top-nav" role="banner">
         <div class="container">
           <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bar">
@@ -52,9 +55,9 @@
           </nav>
         </div>
       </nav>
-      <div class="container" id="me">
-        <div class="col-md-8 col-md-offset-2">
-          <h1>andrew b<small>u</small>ckl<small>e</small>y</h1>
+      <div class="container-fluid" id="me">
+        <div class="col-md-6 col-md-offset-3">
+          <div id="big-header"><h1>andrew b<small>u</small>ckl<small>e</small>y</h1></div>
           <p>I'm a student at Washington University in St. Louis studying Computer Science and Computer Engineering. I recently studied abroad at University College London for the Spring 2014 semester.</p>
           <p>In the summer of 2012 I interned at <a href="http://www.microsoft.com/">Microsoft</a> in Redmond, WA on the <a href="http://www.microsoft.com/windowsembedded/en-us/windows-embedded.aspx">Windows Embedded</a> team. I returned twice more in the summer of 2013 and 2014 on the Windows Embedded Automotive team and the IOT team respectively. I will be starting as a Software Engineer at Microsoft in 2015 within the Operating Systems Group.</p>
           <p>Current Projects: A simple tetris-like game with a slight twist. <small>In early alpha</small> called <a href="http://bckly.me/tris">tris</a> and An iOS radio streaming application for Washington University's student-run radio station <u>KWUR.</u></p><p></p><small>source code coming soon. maybe.</small></p>
@@ -64,7 +67,7 @@
       </div>
     </header>
 
-    <div class="container-fluid">
+    <div class="container-fluid" id="skills-div">
       <section id="skills">
         <div class="row">
           <div class="col-md-12">
@@ -74,49 +77,51 @@
             <p>I am most experienced in C++, Java, HTML, CSS, and Javascript. I have created several iPhone applications and have produced many custom websites with fantastic results. Below, you can see all of the different languages and technoligies that I have experience with.</p>
           </div>
         </div>
-        <div class="row">
+        <div class="row" id="skills-img-row">
           <div class="col-md-1 col-md-offset-2">
-            <a href="#" class="thumbnail">
+            <a href="#" class="thumbnail" id="skill-img">
               <img src="img/angular.png">
             </a>
           </div>
           <div class="col-md-1">
-            <a href="#" class="thumbnail">
+            <a href="#" class="thumbnail" id="skill-img">
               <img src="img/cpp.png">
             </a>
           </div>
           <div class="col-md-1">
-            <a href="#" class="thumbnail">
+            <a href="#" class="thumbnail" id="skill-img">
               <img src="img/css3.png">
             </a>
           </div>
           <div class="col-md-1">
-            <a href="#" class="thumbnail">
+            <a href="#" class="thumbnail" id="skill-img">
               <img src="img/django.png">
             </a>
           </div>
           <div class="col-md-1">
-            <a href="#" class="thumbnail">
+            <a href="#" class="thumbnail" id="skill-img">
               <img src="img/html5.png">
             </a>
           </div>
           <div class="col-md-1">
-            <a href="#" class="thumbnail">
+            <a href="#" class="thumbnail" id="skill-img">
               <img src="img/javascript.jpg">
             </a>
           </div>
           <div class="col-md-1">
-            <a href="#" class="thumbnail">
+            <a href="#" class="thumbnail" id="skill-img">
               <img src="img/python.png">
             </a>
           </div>
           <div class="col-md-1">
-            <a href="#" class="thumbnail">
+            <a href="#" class="thumbnail" id="skill-img">
               <img src="img/ruby.png">
             </a>
           </div>
         </div>
       </section>
+    </div>
+    <div class="container-fluid" id="projects-div">
       <section id="projects">
         <div class="row">
           <div class="col-md-12">
@@ -125,55 +130,57 @@
         </div>
         <div class="row">
           <div class="col-md-3">
-            <div class="thumbnail">
-              <img src="img/bckly site.png">
+            <div class="thumbnail" id="work-img">
+              <a href="http://bckly.me"><img src="img/bckly site.png"></a>
               <div class="caption">
                 <h3>My Personal Website</h3>
                 <p>A website I made for myself which says a bit about me.</p>
-                <p><a href="http://bckly.me" class="btn btn-primary" role="button">Check it out!</a></p>
+                <!-- <p><a href="http://bckly.me" class="btn btn-primary" role="button">Check it out!</a></p> -->
               </div>
             </div>
           </div>
           <div class="col-md-3">
-            <div class="thumbnail">
-              <img src="img/kwurSplash.png">
+            <div class="thumbnail" id="work-img">
+              <a href="#"><img src="img/kwurSplashSquare.png"></a>
               <div class="caption">
                 <h3>KWUR iPhone App</h3>
                 <p>A radio streaming iPhone application for Washington University's own student-run radio station KWUR.</p>
-                <p><a href="#" class="btn btn-primary" role="button">Check it out!</a></p>
+                <!-- <p><a href="#" class="btn btn-primary" role="button">Check it out!</a></p> -->
               </div>
             </div>
           </div>
           <div class="col-md-3">
-            <div class="thumbnail">
-              <img src="img/lightmarkLogo.png">
+            <div class="thumbnail" id="work-img">
+              <a href="https://github.com/bckly/lightmark"><img src="img/lightmarkLogo.png"></a>
               <div class="caption">
                 <h3>Lightmark</h3>
                 <p>A(nother) light-weight markup language. Parser written in python.</p>
-                <p><a href="https://github.com/bckly/lightmark" class="btn btn-primary" role="button">Check it out!</a></p>
+                <!-- <p><a href="https://github.com/bckly/lightmark" class="btn btn-primary" role="button">Check it out!</a></p> -->
               </div>
             </div>
           </div>
           <div class="col-md-3">
-            <div class="thumbnail">
-              <img src="img/tris.png">
+            <div class="thumbnail" id="work-img">
+              <a href="http://bckly.me/tris"><img src="img/tris.png"></a>
               <div class="caption">
                 <h3>Tris</h3>
                 <p>A tetris-like game...with a twist! Bare with me, it's still a work in progress.</p>
-                <p><a href="http://bckly.me/tris" class="btn btn-primary" role="button">Check it out!</a></p>
+                <!-- <p><a href="http://bckly.me/tris" class="btn btn-primary" role="button">Check it out!</a></p> -->
               </div>
             </div>
           </div>
         </div>
       </section>
+    </div>
+    <div class="container-fluid" id="contact-div">
       <section id="contact">
         <div class="row">
-          <div class="col-md-12">
+          <div class="col-md-6 col-md-offset-6">
             <h1>Let's Talk</h1>
           </div>
         </div>
         <div class="row">
-          <div class="col-md-6 col-md-offset-3">
+          <div class="col-md-6 col-md-offset-6">
             <form>
               <div class="form-group">
                 <label for="name">name</label>
