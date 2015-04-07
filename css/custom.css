@@ -1,5 +1,5 @@
 *{
-  font-family: 'Lato', sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 body{
   background-image: url("../img/seattle-blurred.jpg");
@@ -18,11 +18,30 @@ body{
   margin-left: 85px;
   margin-right: 85px;
   margin-bottom: 30px;
+  transition: background-color 1s ease;
+  transition: border-color 1s ease;
 }
 
 #big-header h1 {
   font-size: 500%;
   margin-top: -1px;
+}
+
+#big-header:hover {
+  background-color: gray;
+  border-color: gray;
+  transition: background-color 1s ease;
+  transition: border-color 1s ease;
+}
+
+#big-header small{
+  color: gray;
+  transition: color 1s ease;
+}
+
+#big-header:hover small{
+  color: black;
+  transition: color 1s ease;
 }
 
 #me {
@@ -131,4 +150,10 @@ background: linear-gradient(to right, rgba(255,255,255,0.25) 0%,rgba(255,255,255
   top: 200px;
   left: 0;
   width: 100%;
+}
+
+#footer-div{
+  padding-top: 10px;
+  background-color: black;
+  color: white;
 }
